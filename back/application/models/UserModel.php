@@ -23,4 +23,12 @@ class UserModel extends CI_Model
         }
         return false;
     }
+
+    public function updateRoom($token, $id) {
+        $data = array(
+            'SalleId' => $id
+        );
+        $this->db->where('Id', $token);
+        $this->db->update('Users', $data);
+    }
 }

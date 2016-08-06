@@ -39,4 +39,12 @@ class User extends CI_Controller {
 		}
 		echo $json;
 	}
+
+	public function updateUserRoom()
+	{
+		$token = $this->input->post('token');
+		$roomsId = $this->input->post('roomsId');
+		$this->load->model('UserModel');
+		$this->UserModel->updateRoom($token, $roomsId);
+	}
 }
