@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Router, Route, Link} from 'react-router'
 import logo from '../images/logo.svg';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap/dist/css/bootstrap.css';
