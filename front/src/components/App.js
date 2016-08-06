@@ -240,8 +240,7 @@ class App extends Component {
                         <b>Version</b>
                         2.3.6
                     </div>
-                    <strong>Copyright &copy;
-                        <a href="">Shadoks</a>.</strong>
+                    <strong>Made with love by Shadoks team</strong>
                      All rights reserved.
                 </footer>
 
