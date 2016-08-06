@@ -31,24 +31,30 @@ class Room extends Component {
                           <span className="users-list-date">Today</span>
                       </li>
                       <li>
+                        <div className="img_faces">
                           <img src="../src/dist/img/matw_avatar_160px.png" alt="User Image"/>
+                        </div>
                           <a className="users-list-name" href="#">Jean-Philippe</a>
                           <span className="users-list-date">Yesterday</span>
                       </li>
                       <li>
+                        <div className="img_faces">
                           <img src="../src/dist/img/matw_avatar_160px.png" alt="User Image"/>
+                        </div>
                           <a className="users-list-name" href="#">Vincent</a>
                           <span className="users-list-date">04 Aug</span>
                       </li>
                       <li>
+                        <div className="img_faces">
                           <img src="../src/dist/img/matw_avatar_160px.png" alt="User Image"/>
+                        </div>
                           <a className="users-list-name" href="#">Mathis</a>
                           <span className="users-list-date">04 Aug</span>
                       </li>
                   </ul>
               </div>
               <div className="box-footer text-center">
-                  <a href="javascript:void(0)" className="uppercase">View All Users</a>
+                  <a href="javascript:void(0)" className="uppercase">View all users</a>
               </div>
           </div>
         );
