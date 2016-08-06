@@ -24,7 +24,7 @@ class Room extends Component {
               <div className="box-body no-padding">
                   <ul className="users-list clearfix">
                       <li>
-                          <img src="dist/img/user1-128x128.jpg" alt="User Image"/>
+                          <img src="../dist/img/matw_avatar_160px.png" alt="User Image"/>
                           <a className="users-list-name" href="#">Mathieu</a>
                           <span className="users-list-date">Today</span>
                       </li>

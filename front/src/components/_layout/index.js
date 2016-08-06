@@ -163,7 +163,7 @@ class NavBar extends Component {
                                 Online</a>
                         </div>
                     </div>
-                  
+
                     <ul className="sidebar-menu">
                         <li className="active treeview">
                             <a href="#">

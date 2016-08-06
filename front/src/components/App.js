@@ -240,8 +240,8 @@ class App extends Component {
                         <b>Version</b>
                         2.3.6
                     </div>
-                    <strong>Copyright &copy; 2014-2016
-                        <a href="">Almsaeed Studio</a>.</strong>
+                    <strong>Copyright &copy;
+                        <a href="">Shadoks</a>.</strong>
                      All rights reserved.
                 </footer>
 
