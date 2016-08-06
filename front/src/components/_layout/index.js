@@ -153,15 +153,7 @@ class NavBar extends Component {
             <aside className="main-sidebar">
                 <section className="sidebar">
                     <div className="user-panel">
-                        <div className="pull-left Image">
-                            <img src="../src/dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
-                        </div>matw_avatar_160px
-                        <div className="pull-left info">
-                            <p>Mathieu Wautier</p>
-                            <a href="#">
-                                <i className="fa fa-circle text-success"></i>
-                                Online</a>
-                        </div>
+                        <img src="../src/dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
                     </div>
 
                     <ul className="sidebar-menu">
