@@ -15,7 +15,7 @@ class App extends Component {
                 <header className="main-header">
                     <a href="#" className="logo">
                         <span className="logo-lg">
-                            <b>CoWorkers</b></span>
+                            <b>Co-Workers</b></span>
                     </a>
                     <nav className="navbar navbar-static-top">
                         <a href="#" className="sidebar-toggle" data-toggle="offcanvas" role="button">
