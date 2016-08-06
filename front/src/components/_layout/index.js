@@ -104,12 +104,12 @@ class AppHeader extends Component {
 
                             <li className="dropdown user user-menu">
                                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="dist/img/user2-160x160.jpg" className="user-image" alt="User Image"/>
+                                    <img src="../src/dist/img/matw_avatar.png" className="user-image" alt="User Image"/>
                                     <span className="hidden-xs">Mathieu Wautier</span>
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="user-header">
-                                        <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image"/>
+                                        <img src="../src/dist/img/matw_avatar.png" className="img-circle" alt="User Image"/>
 
                                         <p>
                                             Mathieu Wautier - Web Developer
@@ -155,7 +155,7 @@ class NavBar extends Component {
                 <section className="sidebar">
                     <div className="user-panel">
                         <div className="pull-left Image">
-                            <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image"/>
+                            <img src="dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
                         </div>
                         <div className="pull-left info">
                             <p>Mathieu Wautier</p>
