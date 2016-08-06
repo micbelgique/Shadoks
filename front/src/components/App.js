@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import '../theme/css/AdminLTE.css';
 import '../theme/css/skins/_all-skins.css';
 import '../components/App.css';
+import Chat from "./Chat"
 
 class App extends Component {
     render() {
@@ -18,18 +19,15 @@ class App extends Component {
                             <b>CoWorkers</b></span>
                     </a>
                     <nav className="navbar navbar-static-top">
-                        <a href="#" className="sidebar-toggle" data-toggle="offcanvas" role="button">
-                            <span className="sr-only">Toggle navigation</span>
-                        </a>
                         <div className="navbar-custom-menu">
                             <ul className="nav navbar-nav">
                                 <li className="dropdown messages-menu">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                                         <i className="fa fa-envelope-o"></i>
-                                        <span className="label label-success">4</span>
+                                        <span className="label label-success">1</span>
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li className="header">You have 5 messages</li>
+                                        <li className="header">You have 1 messages</li>
                                         <li>
 
                                             <ul className="menu">
@@ -39,68 +37,12 @@ class App extends Component {
                                                             <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image"/>
                                                         </div>
                                                         <h4>
-                                                            Support Team
+                                                            Mathis André
                                                             <small>
                                                                 <i className="fa fa-clock-o"></i>
                                                                 5 mins</small>
                                                         </h4>
-                                                        <p>Why not buy a new awesome theme?</p>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div className="pull-left">
-                                                            <img src="dist/img/user3-128x128.jpg" className="img-circle" alt="User Image"/>
-                                                        </div>
-                                                        <h4>
-                                                            AdminLTE Design Team
-                                                            <small>
-                                                                <i className="fa fa-clock-o"></i>
-                                                                2 hours</small>
-                                                        </h4>
-                                                        <p>Why not buy a new awesome theme?</p>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div className="pull-left">
-                                                            <img src="dist/img/user4-128x128.jpg" className="img-circle" alt="User Image"/>
-                                                        </div>
-                                                        <h4>
-                                                            Developers
-                                                            <small>
-                                                                <i className="fa fa-clock-o"></i>
-                                                                Today</small>
-                                                        </h4>
-                                                        <p>Why not buy a new awesome theme?</p>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div className="pull-left">
-                                                            <img src="dist/img/user3-128x128.jpg" className="img-circle" alt="User Image"/>
-                                                        </div>
-                                                        <h4>
-                                                            Sales Department
-                                                            <small>
-                                                                <i className="fa fa-clock-o"></i>
-                                                                Yesterday</small>
-                                                        </h4>
-                                                        <p>Why not buy a new awesome theme?</p>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div className="pull-left">
-                                                            <img src="dist/img/user4-128x128.jpg" className="img-circle" alt="User Image"/>
-                                                        </div>
-                                                        <h4>
-                                                            Reviewers
-                                                            <small>
-                                                                <i className="fa fa-clock-o"></i>
-                                                                2 days</small>
-                                                        </h4>
-                                                        <p>Why not buy a new awesome theme?</p>
+                                                        <p>Welcome Mathieu!</p>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -113,40 +55,16 @@ class App extends Component {
                                 <li className="dropdown notifications-menu">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                                         <i className="fa fa-bell-o"></i>
-                                        <span className="label label-warning">10</span>
+                                        <span className="label label-warning">1</span>
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li className="header">You have 10 notifications</li>
+                                        <li className="header">You have 1 notifications</li>
                                         <li>
                                             <ul className="menu">
                                                 <li>
                                                     <a href="#">
                                                         <i className="fa fa-users text-aqua"></i>
-                                                        5 new members joined today
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-warning text-yellow"></i>
-                                                        Very long description here that may not fit into the page and may cause design problems
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-users text-red"></i>
-                                                        5 new members joined
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-shopping-cart text-green"></i>
-                                                        25 sales made
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-user text-red"></i>
-                                                        You changed your username
+                                                        4 new members joined this week
                                                     </a>
                                                 </li>
                                             </ul>
@@ -157,88 +75,17 @@ class App extends Component {
                                     </ul>
                                 </li>
 
-                                <li className="dropdown tasks-menu">
-                                    <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                        <i className="fa fa-flag-o"></i>
-                                        <span className="label label-danger">9</span>
-                                    </a>
-                                    <ul className="dropdown-menu">
-                                        <li className="header">You have 9 tasks</li>
-                                        <li>
-
-                                            <ul className="menu">
-                                                <li>
-                                                    <a href="#">
-                                                        <h3>
-                                                            Design some buttons
-                                                            <small className="pull-right">20%</small>
-                                                        </h3>
-                                                        <div className="progress xs">
-                                                            <div className="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                                <span className="sr-only">20% Complete</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#">
-                                                        <h3>
-                                                            Create a nice theme
-                                                            <small className="pull-right">40%</small>
-                                                        </h3>
-                                                        <div className="progress xs">
-                                                            <div className="progress-bar progress-bar-green" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                                <span className="sr-only">40% Complete</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#">
-                                                        <h3>
-                                                            Some task I need to do
-                                                            <small className="pull-right">60%</small>
-                                                        </h3>
-                                                        <div className="progress xs">
-                                                            <div className="progress-bar progress-bar-red" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                                <span className="sr-only">60% Complete</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <h3>
-                                                            Make beautiful transitions
-                                                            <small className="pull-right">80%</small>
-                                                        </h3>
-                                                        <div className="progress xs">
-                                                            <div className="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                                <span className="sr-only">80% Complete</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="footer">
-                                            <a href="#">View all tasks</a>
-                                        </li>
-                                    </ul>
-                                </li>
                                 <li className="dropdown user user-menu">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                                         <img src="dist/img/user2-160x160.jpg" className="user-image" alt="User Image"/>
-                                        <span className="hidden-xs">Alexander Pierce</span>
+                                        <span className="hidden-xs">Mathieu Wautier</span>
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li className="user-header">
                                             <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image"/>
 
                                             <p>
-                                                Alexander Pierce - Web Developer
+                                                Mathieu Wautier - Web Developer
                                                 <small>Member since Nov. 2012</small>
                                             </p>
                                         </li>
@@ -265,11 +112,6 @@ class App extends Component {
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="#" data-toggle="control-sidebar">
-                                        <i className="fa fa-gears"></i>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
@@ -282,7 +124,7 @@ class App extends Component {
                                 <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image"/>
                             </div>
                             <div className="pull-left info">
-                                <p>Alexander Pierce</p>
+                                <p>Mathieu Wautier</p>
                                 <a href="#">
                                     <i className="fa fa-circle text-success"></i>
                                     Online</a>
@@ -347,12 +189,6 @@ class App extends Component {
                                 </ul>
                             </li>
                             <li>
-                                <a href="pages/widgets.html">
-                                    <i className="fa fa-th"></i>
-                                    <span>Widgets</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="pages/calendar.html">
                                     <i className="fa fa-calendar"></i>
                                     <span>Calendar</span>
@@ -392,135 +228,7 @@ class App extends Component {
                     <section className="content">
                         <div className="row">
                             <div className="col-md-8">
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="box box-warning direct-chat direct-chat-warning">
-                                            <div className="box-header with-border">
-                                                <h3 className="box-title">Direct Chat</h3>
-
-                                                <div className="box-tools pull-right">
-                                                    <span data-toggle="tooltip" title="3 New Messages" className="badge bg-yellow">1</span>
-                                                    <button type="button" className="btn btn-box-tool" data-widget="collapse">
-                                                        <i className="fa fa-minus"></i>
-                                                    </button>
-                                                    <button type="button" className="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
-                                                        <i className="fa fa-comments"></i>
-                                                    </button>
-                                                    <button type="button" className="btn btn-box-tool" data-widget="remove">
-                                                        <i className="fa fa-times"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div className="box-body">
-                                                <div className="direct-chat-messages">
-                                                    <div className="direct-chat-msg">
-                                                        <div className="direct-chat-info clearfix">
-                                                            <span className="direct-chat-name pull-left">Mathieu Wautier</span>
-                                                            <span className="direct-chat-timestamp pull-right">06 Aug 2:00 pm</span>
-                                                        </div>
-                                                        <img className="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image"/>
-                                                        <div className="direct-chat-text">
-                                                            Hello CoWorkers !
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div className="direct-chat-contacts">
-                                                    <ul className="contacts-list">
-                                                        <li>
-                                                            <a href="#">
-                                                                <img className="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Image"/>
-
-                                                                <div className="contacts-list-info">
-                                                                    <span className="contacts-list-name">
-                                                                        Count Dracula
-                                                                        <small className="contacts-list-date pull-right">2/28/2015</small>
-                                                                    </span>
-                                                                    <span className="contacts-list-msg">How have you been? I was...</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <img className="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Image"/>
-
-                                                                <div className="contacts-list-info">
-                                                                    <span className="contacts-list-name">
-                                                                        Sarah Doe
-                                                                        <small className="contacts-list-date pull-right">2/23/2015</small>
-                                                                    </span>
-                                                                    <span className="contacts-list-msg">I will be waiting for...</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <img className="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Image"/>
-
-                                                                <div className="contacts-list-info">
-                                                                    <span className="contacts-list-name">
-                                                                        Nadia Jolie
-                                                                        <small className="contacts-list-date pull-right">2/20/2015</small>
-                                                                    </span>
-                                                                    <span className="contacts-list-msg">I ll call you back at...</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <img className="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Image"/>
-
-                                                                <div className="contacts-list-info">
-                                                                    <span className="contacts-list-name">
-                                                                        Nora S. Vans
-                                                                        <small className="contacts-list-date pull-right">2/10/2015</small>
-                                                                    </span>
-                                                                    <span className="contacts-list-msg">Where is your new...</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <img className="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Image"/>
-
-                                                                <div className="contacts-list-info">
-                                                                    <span className="contacts-list-name">
-                                                                        John K.
-                                                                        <small className="contacts-list-date pull-right">1/27/2015</small>
-                                                                    </span>
-                                                                    <span className="contacts-list-msg">Can I take a look at...</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <img className="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Image"/>
-
-                                                                <div className="contacts-list-info">
-                                                                    <span className="contacts-list-name">
-                                                                        Kenneth M.
-                                                                        <small className="contacts-list-date pull-right">1/4/2015</small>
-                                                                    </span>
-                                                                    <span className="contacts-list-msg">Never mind I found...</span>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="box-footer">
-                                                <form action="#" method="post">
-                                                    <div className="input-group">
-                                                        <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                                                        <span className="input-group-btn">
-                                                            <button type="button" className="btn btn-warning btn-flat">Send</button>
-                                                        </span>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                <div className="row">                                  
                                     <div className="col-md-6">
                                         <div className="box box-danger">
                                             <div className="box-header with-border">
@@ -561,7 +269,7 @@ class App extends Component {
                                                 </ul>
                                             </div>
                                             <div className="box-footer text-center">
-                                                <a href="javascript:void(0)" className="uppercase">View All Users</a>
+                                                <a href="javascript:void(0)" className="uppercase">View all users</a>
                                             </div>
                                         </div>
                                     </div>
