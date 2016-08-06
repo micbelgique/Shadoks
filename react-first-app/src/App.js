@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -67,7 +67,7 @@ onSubmit(text,value){
 // const {onSubmit} = this.props;
 
     return (
-      <form className="commentForm">
+      <form className="commentForm" onSubmit={(e) => {e.preventDefault(); this.onSubmit(this.state.author,this.state.text);}}>
           <input
             type="text"
             placeholder="Your name"
@@ -80,11 +80,13 @@ onSubmit(text,value){
             value={this.state.text}
             onChange={(e) => this.setState({text: e.target.value})}
           />
-        <input type="button" value="Post" onClick={() => this.onSubmit(this.state.author,this.state.text)}/>
+        <input type="submit" value="Post" />
         </form>
     );
   }
 }
+
+CommentForm.propTypes = { onSubmit : PropTypes.func.isRequired }
 
 class Comment extends Component {
   render() {
