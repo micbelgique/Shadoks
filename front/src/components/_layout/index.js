@@ -113,7 +113,6 @@ class AppHeader extends Component {
 
                                         <p>
                                             Mathieu Wautier - Web Developer
-                                            <small>Member since Nov. 2012</small>
                                         </p>
                                     </li>
                                     <li className="user-body">
@@ -164,18 +163,7 @@ class NavBar extends Component {
                                 Online</a>
                         </div>
                     </div>
-
-                    <form action="#" method="get" className="sidebar-form">
-                        <div className="input-group">
-                            <input type="text" name="q" className="form-control" placeholder="Search..."/>
-                            <span className="input-group-btn">
-                                <button type="submit" name="search" id="search-btn" className="btn btn-flat">
-                                    <i className="fa fa-search"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </form>
-
+                  
                     <ul className="sidebar-menu">
                         <li className="active treeview">
                             <a href="#">
