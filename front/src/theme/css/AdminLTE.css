@@ -4926,3 +4926,10 @@ table.text-center th {
     white-space: normal !important;
   }
 }
+
+.main-footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
