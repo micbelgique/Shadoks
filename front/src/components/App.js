@@ -13,11 +13,9 @@ class App extends Component {
         return (
             <div>
                 <header className="main-header">
-                    <a href="index2.html" className="logo">
-                        <span className="logo-mini">
-                            <b>A</b>LT</span>
+                    <a href="#" className="logo">
                         <span className="logo-lg">
-                            <b>Admin</b>LTE</span>
+                            <b>Co-Workers</b></span>
                     </a>
                     <nav className="navbar navbar-static-top">
                         <a href="#" className="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -31,7 +29,7 @@ class App extends Component {
                                         <span className="label label-success">4</span>
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li className="header">You have 4 messages</li>
+                                        <li className="header">You have 5 messages</li>
                                         <li>
 
                                             <ul className="menu">
