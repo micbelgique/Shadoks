@@ -7,7 +7,6 @@ import '../theme/css/AdminLTE.css';
 import '../theme/css/skins/_all-skins.css';
 import '../components/App.css';
 
-
 class App extends Component {
     render() {
         return (
@@ -15,7 +14,7 @@ class App extends Component {
                 <header className="main-header">
                     <a href="#" className="logo">
                         <span className="logo-lg">
-                            <b>CoWorkers</b></span>
+                        <b>CoWorkers</b></span>
                     </a>
                     <nav className="navbar navbar-static-top">
                         <div className="navbar-custom-menu">

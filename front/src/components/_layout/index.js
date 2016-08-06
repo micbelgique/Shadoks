@@ -104,7 +104,7 @@ class AppHeader extends Component {
 
                             <li className="dropdown user user-menu">
                                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="../src/dist/img/matw_avatar.png" className="user-image" alt="User Image"/>
+                                    <img src="../../src/dist/img/matw_avatar.png" className="user-image" alt="User Image"/>
                                     <span className="hidden-xs">Mathieu Wautier</span>
                                 </a>
                                 <ul className="dropdown-menu">
@@ -154,8 +154,8 @@ class NavBar extends Component {
                 <section className="sidebar">
                     <div className="user-panel">
                         <div className="pull-left Image">
-                            <img src="dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
-                        </div>
+                            <img src="../src/dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
+                        </div>matw_avatar_160px
                         <div className="pull-left info">
                             <p>Mathieu Wautier</p>
                             <a href="#">
@@ -243,8 +243,8 @@ class AppFooter extends Component {
                     <b>Version</b>
                     2.3.6
                 </div>
-                <strong>Copyright &copy; 2014-2016
-                    <a href="">Almsaeed Studio</a>.</strong>
+                <strong>Copyright &copy; 2016
+                    <a href="">Shadoks</a>.</strong>
                 All rights reserved.
             </footer>
         );
