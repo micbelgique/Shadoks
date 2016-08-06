@@ -399,7 +399,7 @@ class App extends Component {
                                                 <h3 className="box-title">Direct Chat</h3>
 
                                                 <div className="box-tools pull-right">
-                                                    <span data-toggle="tooltip" title="3 New Messages" className="badge bg-yellow">3</span>
+                                                    <span data-toggle="tooltip" title="3 New Messages" className="badge bg-yellow">1</span>
                                                     <button type="button" className="btn btn-box-tool" data-widget="collapse">
                                                         <i className="fa fa-minus"></i>
                                                     </button>
