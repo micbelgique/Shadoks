@@ -17,8 +17,8 @@ const Text = (props) =>
 ReactDOM.render(
     <Router history={browserHistory}>
     <Route path="/" component={Layout}>
-        <IndexRoute component={Text}/>
-        <Route path="foo" component={Room}/>
-        <Route path="/Login" component={Login} />
+        <IndexRoute component={Room}/>
+        <Route path="Room" component={Room}/>
     </Route>
+    <Route path="/Login" component={Login} />
 </Router>, document.getElementById('root'));
