@@ -4,8 +4,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../../theme/css/AdminLTE.css';
 import '../../theme/css/skins/_all-skins.css';
+import store from '../../store';
+import * as userActions from '../../actions/user';
+
 
 class Login extends Component {
+
     render() {
         return (
             <div className="hold-transition login-page">
@@ -18,7 +22,7 @@ class Login extends Component {
                     <div className="login-box-body">
                         <p className="login-box-msg">Sign in to start your session</p>
 
-                        <form action="../../index2.html" method="post">
+                        <form>
                             <div className="form-group has-feedback">
                                 <input type="email" className="form-control" placeholder="Email"/>
                                 <span className="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -29,7 +33,7 @@ class Login extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-xs-offset-8 col-xs-4">
-                                    <button type="submit" className="btn btn-primary btn-block btn-flat">Sign In</button>
+                                    <a  className="btn btn-primary btn-block btn-flat"  onClick={userActions.LoadUser()}>Sign In</a>
                                 </div>
 
                             </div>

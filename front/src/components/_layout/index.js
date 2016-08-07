@@ -4,8 +4,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../../theme/css/AdminLTE.css';
 import '../../theme/css/skins/_all-skins.css';
+import {connect} from 'react-redux';
+import * as userActions from '../../actions/user';
+import store from '../../store';
 
 class Layout extends Component {
+
+
     render() {
         return (
             <div>
@@ -249,4 +254,12 @@ class AppFooter extends Component {
     }
 }
 
-export default Layout;
+// export default Layout;
+
+
+function mapStateToProps(state) {
+   // TODO : tout pourri
+   const { user, isFetching } = state.user;
+   return { user, isFetching }
+}
+export default connect(mapStateToProps)(Layout);

@@ -1,4 +1,4 @@
-import * as actions from '../actions/rooms'
+import * as actions from '../actions/rooms';
 
 const defaultState = {
     rooms: [],

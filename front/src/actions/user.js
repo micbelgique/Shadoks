@@ -1,0 +1,45 @@
+export const REQUEST_USER = 'REQUEST_USER';
+export const RECEIVE_USER = 'RECEIVE_USER';
+
+import config from '../config';
+
+function RequestUser(){
+    return {
+        type: REQUEST_USER
+    };
+}
+
+function ReceiveUser(user){
+    return {
+        type: RECEIVE_USER,
+        user
+    };
+}
+
+
+function FetchUser(state){
+    return (dispatch) => {
+        dispatch(RequestUser());
+        fetch(`${config.baseUrl}/Api/user.json`)
+        .then((response)=>{
+            return response.json();
+        })
+        .then((responseJson) => {
+            dispatch(ReceiveUser(responseJson));
+        })
+    }
+}
+
+
+function  ShouldFetch(state) {
+  return !state.rooms.isFetching;
+}
+
+
+export function LoadUser() {
+  return (dispatch, getState) => {
+    if (!ShouldFetch(getState())) return null;
+
+    return dispatch(FetchUser(getState()));
+  }
+}
