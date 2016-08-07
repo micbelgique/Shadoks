@@ -6,9 +6,17 @@ import '../../theme/css/AdminLTE.css';
 import '../../theme/css/skins/_all-skins.css';
 import store from '../../store';
 import * as userActions from '../../actions/user';
+import { browserHistory } from 'react-router'
 
 
 class Login extends Component {
+    constructor(props) {
+        super(props);
+        this.login = function(){
+            //userActions.LoadUser();
+            browserHistory.push('/');
+        };
+    }
 
     render() {
         return (
@@ -33,7 +41,7 @@ class Login extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-xs-offset-8 col-xs-4">
-                                    <a  className="btn btn-primary btn-block btn-flat"  onClick={userActions.LoadUser()}>Sign In</a>
+                                    <a  className="btn btn-primary btn-block btn-flat"  onClick={this.login}>Sign In</a>
                                 </div>
 
                             </div>

@@ -10,7 +10,6 @@ import store from '../../store';
 
 class Layout extends Component {
 
-
     render() {
         return (
             <div>

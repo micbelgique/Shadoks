@@ -38,7 +38,6 @@ function  ShouldFetch(state) {
 }
 
 export function LoadRooms() {
-  debugger;
   return (dispatch, getState) => {
     if (!ShouldFetch(getState())) return null;
 
