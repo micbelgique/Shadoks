@@ -1,2 +1,2 @@
-# DevCamp2016-Team2
+# DevCamp2016-Shadoks
 Co-workers project
