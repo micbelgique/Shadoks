@@ -151,7 +151,6 @@ class NavBar extends Component {
                             {n.Name}</a>
                     </li>
                 );
-
             });
 
             return (
