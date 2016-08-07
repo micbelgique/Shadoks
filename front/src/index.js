@@ -17,7 +17,8 @@ ReactDOM.render(
     <Router history={history}>
         <Route path="/" component={Layout}>
             <IndexRoute component={Rooms}/>
-            <Route path="Room" component={Rooms}/>
+            <Route path="Rooms" component={Rooms}/>
+            <Route path="Room/:roomId" component={RoomDetails}/>
         </Route>
         <Route path="/Login" component={Login}/>
     </Router>
