@@ -21,11 +21,12 @@ function ReceiveRooms(rooms){
 function FetchRooms(state){
   return (dispatch) => {
     dispatch(RequestRooms());
-    fetch(`${config.baseUrl}/rooms/getall`)
+    // fetch(`${config.baseUrl}/rooms/getall`)
+    fetch(`${config.baseUrl}/Api/rooms.json`)
     .then((response) => {
       return response.json();
-    }).then((responseJason) => {
-      dispatch(ReceiveRooms(responseJason));
+    }).then((responseJson) => {
+      dispatch(ReceiveRooms(responseJson));
     }).catch((error) => {
       console.log('tant pis pour ta gueule!!!!');
     })

@@ -1,21 +1,18 @@
-import React, {
-    Component
-} from 'react';
+import React, {Component} from 'react';
 import store from '../../store';
-import {
-    connect
-} from 'react-redux';
+import {connect} from 'react-redux';
 import * as roomsActions from '../../actions/rooms'
+import Room from '../room'
 
 class Rooms extends Component {
     componentDidMount() {
         store.dispatch(roomsActions.LoadRooms());
     }
     render() {
-        var roomNodes = this.props.rooms.map(function(data) {
-            return ( <room data={data} /> );
+        var roomNodes = this.props.rooms.map(function(room) {
+            return ( <div  key={room.Id} className="col-xs-3"><Room data={room} /></div> );
         });
-        return (<div>{roomNodes}</div>);
+        return (<div className="row">{roomNodes}</div>);
     }
 }
 

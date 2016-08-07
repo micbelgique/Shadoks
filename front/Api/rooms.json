@@ -1,0 +1,33 @@
+[{
+    "Id": 1,
+    "Name": "Room 1",
+    "Users": [{
+        "Id": "3",
+        "Login": "mathieu",
+        "Nom": "Wautier",
+        "Prenom": "Mathieu",
+        "Description": ""
+    }, {
+        "Id": "5",
+        "Login": "jp",
+        "Nom": "deblaton",
+        "Prenom": "JP",
+        "Description": ""
+    }]
+}, {
+    "Id": 2,
+    "Name": "Room 2",
+    "Users": [{
+        "Id": "4",
+        "Login": "mathis",
+        "Nom": "Andre",
+        "Prenom": "Mathis",
+        "Description": ""
+    }, {
+        "Id": "6",
+        "Login": "vincent",
+        "Nom": "Margant",
+        "Prenom": "Vincent",
+        "Description": ""
+    }]
+}]
