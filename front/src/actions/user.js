@@ -21,7 +21,7 @@ function ReceiveUser(user){
 function FetchUser(state){
     return (dispatch) => {
         dispatch(RequestUser());
-        fetch(`${config.baseUrl}/Api/user.json`)
+        fetch(`${config.urls.user}`)
         .then((response)=>{
             return response.json();
         })

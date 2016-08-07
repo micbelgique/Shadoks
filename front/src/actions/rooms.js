@@ -22,7 +22,7 @@ function FetchRooms(state){
   return (dispatch) => {
     dispatch(RequestRooms());
     // fetch(`${config.baseUrl}/rooms/getall`)
-    fetch(`${config.baseUrl}/Api/rooms.json`)
+    fetch(`${config.urls.rooms}`)
     .then((response) => {
       return response.json();
     }).then((responseJson) => {
