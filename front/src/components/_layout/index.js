@@ -8,6 +8,8 @@ import {connect} from 'react-redux';
 import * as userActions from '../../actions/user';
 import store from '../../store';
 import {browserHistory} from 'react-router'
+import groupBy from 'lodash/groupBy'
+import map from 'lodash/map'
 
 class Layout extends Component {
 
@@ -15,8 +17,7 @@ class Layout extends Component {
         return (
             <div>
                 <AppHeader/>
-                <NavBar/>
-                        {this.props.children}
+                <NavBar {...this.props}/> {this.props.children}
                 <AppFooter/>
             </div>
         );
@@ -110,7 +111,7 @@ class AppHeader extends Component {
                                             </div>
                                             <div className="col-xs-6 text-center">
                                                 <a href="#">Followers</a>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                     </li>
                                     <li className="user-footer">
@@ -134,43 +135,59 @@ class AppHeader extends Component {
 
 class NavBar extends Component {
     render() {
+
+        const grouped = groupBy(this.props.rooms, function(b) {
+            return b.CoWorkingName
+        })
+
+        const coWorkingNodes = map(grouped, function(g) {
+
+            const roomsNodes = map(g, function(n) {
+              const link = "/Rooms/"+ n.Id;
+                return (
+                    <li>
+                        <a onClick={() => browserHistory.push(link)}>
+                            <i className="fa fa-circle-o"></i>
+                            {n.Name}</a>
+                    </li>
+                );
+
+            });
+
+            return (
+                <li className="active treeview">
+                    <a>
+                        <i className="fa fa-building-o"></i>
+                        <span>{g[0].CoWorkingName}</span>
+                    </a>
+                    <ul className="treeview-menu">
+                      {roomsNodes}
+                    </ul>
+                </li>
+            );
+        });
+
+        console.info("nodes:", coWorkingNodes);
+        const pointer = {cursor: 'pointer'};
         return (
             <aside className="main-sidebar">
                 <section className="sidebar">
                     <div className="user-panel">
-                          <div className="pull-left image">
+                        <div className="pull-left image">
                             <img src="../src/dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
-                          </div>
-                          <div className="pull-left info">
+                        </div>
+                        <div className="pull-left info">
                             <p>Mathieu Wautier</p>
-                            <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
-                          </div>
-                  </div>
+                            <a href="#">
+                                <i className="fa fa-circle text-success"></i>
+                                Online</a>
+                        </div>
+                    </div>
 
                     <ul className="sidebar-menu">
-                        <li className="active treeview">
-                            <a onClick={() => browserHistory.push('/Rooms')}>
-                                <i className="fa fa-building-o"></i>
-                                <span>CoWorking</span>
-                            </a>
-                            <ul className="treeview-menu">
-                                <li>
-                                    <a onClick={() => browserHistory.push('/Rooms/1')}>
-                                        <i className="fa fa-circle-o"></i>
-                                        Room 1</a>
-                                </li>
-                                <li >
-                                    <a onClick={() => browserHistory.push('/Rooms/2')}>
-                                        <i className="fa fa-circle-o"></i>
-                                      Room 2</a>
-                                </li>
-                                <li >
-                                  <a onClick={() => browserHistory.push('/Rooms/3')}>
-                                        <i className="fa fa-circle-o"></i>
-                                      Room 3</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li onClick={() => browserHistory.push('/Rooms')} className="header" style={pointer}>CoWorkings</li>
+                        {coWorkingNodes}
+                        <li className="header">Menu</li>
                         <li>
                             <a href="pages/calendar.html">
                                 <i className="fa fa-calendar"></i>
@@ -214,10 +231,9 @@ class AppFooter extends Component {
 
 // export default Layout;
 
-
 function mapStateToProps(state) {
-   // TODO : tout pourri
-   const { user, isFetching } = state.user;
-   return { user, isFetching }
+    const {user} = state.user;
+    const {rooms} = state.rooms;
+    return {user, rooms}
 }
 export default connect(mapStateToProps)(Layout);

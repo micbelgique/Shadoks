@@ -29,7 +29,11 @@ class Profil extends Component {
                 <div className="col-md-3">
                   <div className="box box-primary">
                     <div className="box-body box-profile">
+<<<<<<< HEAD
+                      <img className="profile-user-img img-responsive img-circle" src="../src/dist/img/matw_avatar.png" alt="User profile picture"/>
+=======
                       <img className="profile-user-img img-responsive img-circle" src={this.props.user.Avatar} alt="User profile picture"/>
+>>>>>>> f4a6f81f5071cf7bbe6f4d12a7e74dcc256176de
 
                       <h3 className="profile-username text-center">{this.props.user.Nom} {this.props.user.Prenom}</h3>
 
@@ -129,7 +133,7 @@ class Profil extends Component {
                           <div className="user-block">
                             <img className="img-circle img-bordered-sm" src="../../src/dist/img/matw_avatar.png" alt="User Image"/>
                                 <span className="username">
-                                  <a href="#">Mathis André</a>
+                                  <a href="#">Mathis AndrÃ©</a>
                                   <a href="#" className="pull-right btn-box-tool"><i className="fa fa-times"></i></a>
                                 </span>
                             <span className="description">Sent you a message - 3 days ago</span>
@@ -270,7 +274,7 @@ class Profil extends Component {
                             <div className="timeline-item">
                               <span className="time"><i className="fa fa-clock-o"></i> 2 days ago</span>
 
-                              <h3 className="timeline-header"><a href="#">Mathis André</a> uploaded new photos</h3>
+                              <h3 className="timeline-header"><a href="#">Mathis AndrÃ©</a> uploaded new photos</h3>
 
                               <div className="timeline-body">
                                 <img src="../src/dist/img/ndQ6T.jpg" alt="..." className="margin"/>

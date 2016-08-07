@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../../theme/css/AdminLTE.css';
 import '../../theme/css/skins/_all-skins.css';
+import './room.css';
 
 const UserThumbs = (props) => <li>
     <div className="img_faces">
@@ -15,7 +16,7 @@ const UserThumbs = (props) => <li>
 
 class Room extends Component {
     render() {
-        const {Users, Name} = this.props;
+        const {Users, Name, CoWorkingName} = this.props;
         const thumbsNodes = Users.map(function(user) {
           return (<UserThumbs key={user.Id} {...user}/>);
         });
@@ -23,7 +24,7 @@ class Room extends Component {
         return (
             <div className="box box-danger">
                 <div className="box-header with-border">
-                    <h3 className="box-title">{Name}</h3>
+                    <h3 className="box-title"><b>{CoWorkingName}</b> / {Name}</h3>
                     <div className="box-tools pull-right">
                         <span className="label label-danger">{Users.length} CoWorkers</span>
                     </div>
