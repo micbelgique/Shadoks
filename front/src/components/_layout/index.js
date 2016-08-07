@@ -4,8 +4,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../../theme/css/AdminLTE.css';
 import '../../theme/css/skins/_all-skins.css';
+import {connect} from 'react-redux';
+import * as userActions from '../../actions/user';
+import store from '../../store';
 
 class Layout extends Component {
+
     render() {
         return (
             <div>
@@ -153,52 +157,36 @@ class NavBar extends Component {
             <aside className="main-sidebar">
                 <section className="sidebar">
                     <div className="user-panel">
-                        <img src="../src/dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
-                    </div>
+                          <div className="pull-left image">
+                            <img src="../src/dist/img/matw_avatar_160px.png" className="img-circle" alt="User Image"/>
+                          </div>
+                          <div className="pull-left info">
+                            <p>Mathieu Wautier</p>
+                            <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
+                          </div>
+                  </div>
 
                     <ul className="sidebar-menu">
                         <li className="active treeview">
-                            <a href="#">
-                                <i className="fa fa-dashboard"></i>
-                                <span>Dashboard</span>
-                                <span className="pull-right-container">
-                                    <i className="fa fa-angle-left pull-right"></i>
-                                </span>
+                            <a href="/Rooms">
+                                <i className="fa fa-building-o"></i>
+                                <span>CoWorking</span>
                             </a>
                             <ul className="treeview-menu">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="/Rooms/1">
                                         <i className="fa fa-circle-o"></i>
-                                        Dashboard v1</a>
+                                        Room 1</a>
                                 </li>
-                                <li className="active">
-                                    <a href="index2.html">
+                                <li >
+                                    <a href="/Rooms/2">
                                         <i className="fa fa-circle-o"></i>
-                                        Dashboard v2</a>
+                                      Room 2</a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li className="treeview">
-                            <ul className="treeview-menu">
-                                <li>
-                                    <a href="pages/layout/top-nav.html">
+                                <li >
+                                    <a href="/Rooms/3">
                                         <i className="fa fa-circle-o"></i>
-                                        Top Navigation</a>
-                                </li>
-                                <li>
-                                    <a href="pages/layout/boxed.html">
-                                        <i className="fa fa-circle-o"></i>
-                                        Boxed</a>
-                                </li>
-                                <li>
-                                    <a href="pages/layout/fixed.html">
-                                        <i className="fa fa-circle-o"></i>
-                                        Fixed</a>
-                                </li>
-                                <li>
-                                    <a href="pages/layout/collapsed-sidebar.html">
-                                        <i className="fa fa-circle-o"></i>
-                                        Collapsed Sidebar</a>
+                                      Room 3</a>
                                 </li>
                             </ul>
                         </li>
@@ -243,4 +231,12 @@ class AppFooter extends Component {
     }
 }
 
-export default Layout;
+// export default Layout;
+
+
+function mapStateToProps(state) {
+   // TODO : tout pourri
+   const { user, isFetching } = state.user;
+   return { user, isFetching }
+}
+export default connect(mapStateToProps)(Layout);

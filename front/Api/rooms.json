@@ -3,12 +3,14 @@
     "Name": "Room 1",
     "Users": [{
         "Id": "3",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
         "Login": "mathieu",
         "Nom": "Wautier",
         "Prenom": "Mathieu",
         "Description": ""
     }, {
         "Id": "5",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
         "Login": "jp",
         "Nom": "deblaton",
         "Prenom": "JP",
@@ -19,15 +21,21 @@
     "Name": "Room 2",
     "Users": [{
         "Id": "4",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
         "Login": "mathis",
         "Nom": "Andre",
         "Prenom": "Mathis",
         "Description": ""
     }, {
         "Id": "6",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
         "Login": "vincent",
         "Nom": "Margant",
         "Prenom": "Vincent",
         "Description": ""
     }]
+}, {
+    "Id": 3,
+    "Name": "Room 3",
+    "Users": []
 }]
