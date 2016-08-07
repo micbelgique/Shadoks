@@ -16,7 +16,6 @@ const UserThumbs = (props) => <li>
 class Room extends Component {
     render() {
         const {Users, Name} = this.props;
-
         const thumbsNodes = Users.map(function(user) {
           console.info("user",user)
           return (<UserThumbs key={user.Id} {...user}/>);
