@@ -29,21 +29,21 @@ class Profil extends Component {
                 <div className="col-md-3">
                   <div className="box box-primary">
                     <div className="box-body box-profile">
-                      <img className="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture"/>
+                      <img className="profile-user-img img-responsive img-circle" src="../src/dist/img/matw_avatar.png" alt="User profile picture"/>
 
                       <h3 className="profile-username text-center">{this.props.user.Nom} {this.props.user.Prenom}</h3>
 
-                      <p className="text-muted text-center">Software Engineer</p>
+                      <p className="text-muted text-center">Web Developer</p>
 
                       <ul className="list-group list-group-unbordered">
                         <li className="list-group-item">
-                          <b>Followers</b> <a className="pull-right">1,322</a>
+                          <b>Followers</b> <a className="pull-right">3</a>
                         </li>
                         <li className="list-group-item">
-                          <b>Following</b> <a className="pull-right">543</a>
+                          <b>Following</b> <a className="pull-right">3</a>
                         </li>
                         <li className="list-group-item">
-                          <b>Friends</b> <a className="pull-right">13,287</a>
+                          <b>Friends</b> <a className="pull-right">2</a>
                         </li>
                       </ul>
 
@@ -56,21 +56,21 @@ class Profil extends Component {
 
                   <div className="box box-primary">
                     <div className="box-header with-border">
-                      <h3 className="box-title">About Me</h3>
+                      <h3 className="box-title">About me</h3>
                     </div>
 
                     <div className="box-body">
                       <strong><i className="fa fa-book margin-r-5"></i> Education</strong>
 
                       <p className="text-muted">
-                        B.S. in Computer Science from the University of Tennessee at Knoxville
+                        Bachelor degree in Business Computing, HELHa Mons
                       </p>
 
                       <hr/>
 
                       <strong><i className="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-                      <p className="text-muted">Malibu, California</p>
+                      <p className="text-muted">Brussels, Belgium</p>
 
                       <hr/>
 
@@ -80,19 +80,14 @@ class Profil extends Component {
                         <span className="label label-danger">UI Design</span>
                         <span className="label label-success">Coding</span>
                         <span className="label label-info">Javascript</span>
-                        <span className="label label-warning">PHP</span>
+                        <span className="label label-warning">C#</span>
                         <span className="label label-primary">Node.js</span>
                       </p>
-
                       <hr/>
-
                       <strong><i className="fa fa-file-text-o margin-r-5"></i> Notes</strong>
-
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
                     </div>
-
                   </div>
-
                 </div>
 
                 <div className="col-md-9">
@@ -116,11 +111,7 @@ class Profil extends Component {
                           </div>
 
                           <p>
-                            Lorem ipsum represents a long-held tradition for designers,
-                            typographers and the like. Some people hate it and argue for
-                            its demise, but others ignore the hate as they create awesome
-                            tools to help create filler text for everyone from bacon lovers
-                            to Charlie Sheen fans.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.
                           </p>
                           <ul className="list-inline">
                             <li><a href="#" className="link-black text-sm"><i className="fa fa-share margin-r-5"></i> Share</a></li>
@@ -134,24 +125,18 @@ class Profil extends Component {
                           <input className="form-control input-sm" type="text" placeholder="Type a comment"/>
                         </div>
 
-
-
                         <div className="post clearfix">
                           <div className="user-block">
                             <img className="img-circle img-bordered-sm" src="../../dist/img/user7-128x128.jpg" alt="User Image"/>
                                 <span className="username">
-                                  <a href="#">Sarah Ross</a>
+                                  <a href="#">Mathis André</a>
                                   <a href="#" className="pull-right btn-box-tool"><i className="fa fa-times"></i></a>
                                 </span>
                             <span className="description">Sent you a message - 3 days ago</span>
                           </div>
 
                           <p>
-                            Lorem ipsum represents a long-held tradition for designers,
-                            typographers and the like. Some people hate it and argue for
-                            its demise, but others ignore the hate as they create awesome
-                            tools to help create filler text for everyone from bacon lovers
-                            to Charlie Sheen fans.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.
                           </p>
 
                           <form className="form-horizontal">
@@ -165,8 +150,6 @@ class Profil extends Component {
                             </div>
                           </form>
                         </div>
-
-
 
                         <div className="post">
                           <div className="user-block">
@@ -196,11 +179,8 @@ class Profil extends Component {
                                   <br/>
                                   <img className="img-responsive" src="../../dist/img/photo1.png" alt="Photo"/>
                                 </div>
-
                               </div>
-
                             </div>
-
                           </div>
 
 
@@ -224,7 +204,7 @@ class Profil extends Component {
 
                           <li className="time-label">
                                 <span className="bg-red">
-                                  10 Feb. 2014
+                                07 Aug. 2016
                                 </span>
                           </li>
 
@@ -236,7 +216,6 @@ class Profil extends Component {
                               <span className="time"><i className="fa fa-clock-o"></i> 12:05</span>
 
                               <h3 className="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
-
                               <div className="timeline-body">
                                 Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
                                 weebly ning heekya handango imeem plugg dopplr jibjab, movity
@@ -250,18 +229,15 @@ class Profil extends Component {
                             </div>
                           </li>
 
-
                           <li>
                             <i className="fa fa-user bg-aqua"></i>
-
                             <div className="timeline-item">
                               <span className="time"><i className="fa fa-clock-o"></i> 5 mins ago</span>
 
-                              <h3 className="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request
+                              <h3 className="timeline-header no-border"><a href="#">Jean-Philippe</a> accepted your friend request
                               </h3>
                             </div>
                           </li>
-
 
                           <li>
                             <i className="fa fa-comments bg-yellow"></i>
@@ -269,7 +245,7 @@ class Profil extends Component {
                             <div className="timeline-item">
                               <span className="time"><i className="fa fa-clock-o"></i> 27 mins ago</span>
 
-                              <h3 className="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+                              <h3 className="timeline-header"><a href="#">Jean-Philippe</a> commented on your post</h3>
 
                               <div className="timeline-body">
                                 Take me to your leader!
@@ -282,13 +258,11 @@ class Profil extends Component {
                             </div>
                           </li>
 
-
                           <li className="time-label">
                                 <span className="bg-green">
-                                  3 Jan. 2014
+                                  3 Aug. 2016
                                 </span>
                           </li>
-
 
                           <li>
                             <i className="fa fa-camera bg-purple"></i>
@@ -296,13 +270,11 @@ class Profil extends Component {
                             <div className="timeline-item">
                               <span className="time"><i className="fa fa-clock-o"></i> 2 days ago</span>
 
-                              <h3 className="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+                              <h3 className="timeline-header"><a href="#">Mathis André</a> uploaded new photos</h3>
 
                               <div className="timeline-body">
-                                <img src="http://placehold.it/150x100" alt="..." className="margin"/>
-                                <img src="http://placehold.it/150x100" alt="..." className="margin"/>
-                                <img src="http://placehold.it/150x100" alt="..." className="margin"/>
-                                <img src="http://placehold.it/150x100" alt="..." className="margin"/>
+                                <img src="../src/dist/img/ndQ6T.jpg" alt="..." className="margin"/>
+                                <img src="../src/dist/img/rio.jpg" alt="..." className="margin"/>
                               </div>
                             </div>
                           </li>
