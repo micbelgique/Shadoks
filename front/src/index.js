@@ -8,6 +8,7 @@ import {Provider} from 'react-redux';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
 import Login from './components/Login';
+import Profil from './components/profil';
 import store from './store';
 
 const history = syncHistoryWithStore(browserHistory, store);
@@ -18,12 +19,10 @@ ReactDOM.render(
         <Route path="/" component={Layout}>
             <IndexRoute component={Rooms}/>
             <Route path="Rooms" component={Rooms}/>
-           
+            <Route path="/Profil" component={Profil}/>
         </Route>
         <Route path="/Login" component={Login}/>
     </Router>
 </Provider>, document.getElementById('root'));
 
-
-
-           //  /*<Route path="Room/:roomId" component={RoomDetails}/>*/
+//  /*<Route path="Room/:roomId" component={RoomDetails}/>*/
