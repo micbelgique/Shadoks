@@ -11,13 +11,12 @@ function RequestUser(){
 }
 
 function ReceiveUser(user){
-    browserHistory.push('/');
+    browserHistory.push('/Profil');
     return {
         type: RECEIVE_USER,
         user
     };
 }
-
 
 function FetchUser(state){
     return (dispatch) => {

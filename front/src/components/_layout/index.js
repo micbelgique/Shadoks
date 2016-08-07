@@ -15,25 +15,7 @@ class Layout extends Component {
             <div>
                 <AppHeader/>
                 <NavBar/>
-                <div className="content-wrapper">
-                    <section className="content-header">
-                        <h1>
-                            Dashboard
-                        </h1>
-                        <ol className="breadcrumb">
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-dashboard"></i>
-                                    Home</a>
-                            </li>
-                            <li className="active">Dashboard</li>
-                        </ol>
-                    </section>
-
-                    <section className="content">
                         {this.props.children}
-                    </section>
-                </div>
                 <AppFooter/>
             </div>
         );
