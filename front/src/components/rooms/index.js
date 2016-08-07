@@ -10,7 +10,7 @@ class Rooms extends Component {
     }
     render() {
         var roomNodes = this.props.rooms.map(function(room) {
-            return ( <div  key={room.Id} className="col-xs-3"><Room data={room} /></div> );
+            return ( <div  key={room.Id} className="col-xs-12 col-sm-12 col-md-6 col-lg-4"><Room {...room} /></div> );
         });
         return (<div className="row">{roomNodes}</div>);
     }
