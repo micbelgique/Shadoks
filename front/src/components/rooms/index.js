@@ -18,7 +18,7 @@ class Rooms extends Component {
             <div className="content-wrapper">
                 <section className="content-header">
                     <h1>
-                        Dashboard
+                        CoWorking
                     </h1>
                     <ol className="breadcrumb">
                         <li>

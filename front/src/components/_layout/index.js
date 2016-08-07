@@ -7,6 +7,7 @@ import '../../theme/css/skins/_all-skins.css';
 import {connect} from 'react-redux';
 import * as userActions from '../../actions/user';
 import store from '../../store';
+import {browserHistory} from 'react-router'
 
 class Layout extends Component {
 
@@ -114,7 +115,7 @@ class AppHeader extends Component {
                                     </li>
                                     <li className="user-footer">
                                         <div className="pull-left">
-                                            <a href="#" className="btn btn-default btn-flat">Profile</a>
+                                            <a onClick={() => browserHistory.push('/Profil')} className="btn btn-default btn-flat">Profile</a>
                                         </div>
                                         <div className="pull-right">
                                             <a href="#" className="btn btn-default btn-flat">Sign out</a>
@@ -154,17 +155,17 @@ class NavBar extends Component {
                             </a>
                             <ul className="treeview-menu">
                                 <li>
-                                    <a href="/Rooms/1">
+                                    <a onClick={() => browserHistory.push('/Rooms/1')}>
                                         <i className="fa fa-circle-o"></i>
                                         Room 1</a>
                                 </li>
                                 <li >
-                                    <a href="/Rooms/2">
+                                    <a onClick={() => browserHistory.push('/Rooms/2')}>
                                         <i className="fa fa-circle-o"></i>
                                       Room 2</a>
                                 </li>
                                 <li >
-                                    <a href="/Rooms/3">
+                                  <a onClick={() => browserHistory.push('/Rooms/3')}>
                                         <i className="fa fa-circle-o"></i>
                                       Room 3</a>
                                 </li>

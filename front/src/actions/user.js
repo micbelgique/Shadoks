@@ -11,7 +11,7 @@ function RequestUser(){
 }
 
 function ReceiveUser(user){
-    browserHistory.push('/Profil');
+    browserHistory.push('/');
     return {
         type: RECEIVE_USER,
         user
