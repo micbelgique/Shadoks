@@ -8,10 +8,10 @@ var jsonUrls = {
 };
 
 var apiUrls = {
-  user : `${baseApiUrl}/user.json`,
-  rooms : `${baseApiUrl}/rooms.json`
+  user : `${baseJsonUrl}/user.json`,
+  rooms : `${baseApiUrl}/rooms/getall`
 }; 
 
 export default {
-  urls : jsonUrls
+  urls : apiUrls
 };
