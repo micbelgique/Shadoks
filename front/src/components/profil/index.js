@@ -29,7 +29,7 @@ class Profil extends Component {
                 <div className="col-md-3">
                   <div className="box box-primary">
                     <div className="box-body box-profile">
-                      <img className="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture"/>
+                      <img className="profile-user-img img-responsive img-circle" src={this.props.user.Avatar} alt="User profile picture"/>
 
                       <h3 className="profile-username text-center">{this.props.user.Nom} {this.props.user.Prenom}</h3>
 
@@ -47,7 +47,7 @@ class Profil extends Component {
                         </li>
                       </ul>
 
-                      <a href="#" className="btn btn-primary btn-block"><b>Follow</b></a>
+                      <a href="#" className="btn btn-primary btn-block"><b>Edit</b></a>
                     </div>
 
                   </div>
@@ -107,7 +107,7 @@ class Profil extends Component {
 
                         <div className="post">
                           <div className="user-block">
-                            <img className="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image"/>
+                            <img className="img-circle img-bordered-sm" src="../../src/dist/img/matw_avatar.png" alt="user image"/>
                                 <span className="username">
                                   <a href="#">Jonathan Burke Jr.</a>
                                   <a href="#" className="pull-right btn-box-tool"><i className="fa fa-times"></i></a>
@@ -138,7 +138,7 @@ class Profil extends Component {
 
                         <div className="post clearfix">
                           <div className="user-block">
-                            <img className="img-circle img-bordered-sm" src="../../dist/img/user7-128x128.jpg" alt="User Image"/>
+                            <img className="img-circle img-bordered-sm" src="../../src/dist/img/matw_avatar.png" alt="User Image"/>
                                 <span className="username">
                                   <a href="#">Sarah Ross</a>
                                   <a href="#" className="pull-right btn-box-tool"><i className="fa fa-times"></i></a>
@@ -170,7 +170,7 @@ class Profil extends Component {
 
                         <div className="post">
                           <div className="user-block">
-                            <img className="img-circle img-bordered-sm" src="../../dist/img/user6-128x128.jpg" alt="User Image"/>
+                            <img className="img-circle img-bordered-sm" src="../../src/dist/img/matw_avatar.png" alt="User Image"/>
                                 <span className="username">
                                   <a href="#">Adam Jones</a>
                                   <a href="#" className="pull-right btn-box-tool"><i className="fa fa-times"></i></a>
@@ -180,21 +180,21 @@ class Profil extends Component {
 
                           <div className="row margin-bottom">
                             <div className="col-sm-6">
-                              <img className="img-responsive" src="../../dist/img/photo1.png" alt="Photo"/>
+                              <img className="img-responsive" src="../../src/dist/img/matw_avatar.png" alt="Photo"/>
                             </div>
 
                             <div className="col-sm-6">
                               <div className="row">
                                 <div className="col-sm-6">
-                                  <img className="img-responsive" src="../../dist/img/photo2.png" alt="Photo"/>
+                                  <img className="img-responsive" src="../../src/dist/img/matw_avatar.png" alt="Photo"/>
                                   <br/>
-                                  <img className="img-responsive" src="../../dist/img/photo3.jpg" alt="Photo"/>
+                                  <img className="img-responsive" src="../../src/dist/img/matw_avatar.png" alt="Photo"/>
                                 </div>
 
                                 <div className="col-sm-6">
-                                  <img className="img-responsive" src="../../dist/img/photo4.jpg" alt="Photo"/>
+                                  <img className="img-responsive" src="../../src/dist/img/matw_avatar.png" alt="Photo"/>
                                   <br/>
-                                  <img className="img-responsive" src="../../dist/img/photo1.png" alt="Photo"/>
+                                  <img className="img-responsive" src="../../src/dist/img/matw_avatar.png" alt="Photo"/>
                                 </div>
 
                               </div>
@@ -317,35 +317,35 @@ class Profil extends Component {
                       <div className="tab-pane" id="settings">
                         <form className="form-horizontal">
                           <div className="form-group">
-                            <label for="inputName" className="col-sm-2 control-label">Name</label>
+                            <label htmlFor="inputName" className="col-sm-2 control-label">Name</label>
 
                             <div className="col-sm-10">
                               <input type="email" className="form-control" id="inputName" placeholder="Name"/>
                             </div>
                           </div>
                           <div className="form-group">
-                            <label for="inputEmail" className="col-sm-2 control-label">Email</label>
+                            <label htmlFor="inputEmail" className="col-sm-2 control-label">Email</label>
 
                             <div className="col-sm-10">
                               <input type="email" className="form-control" id="inputEmail" placeholder="Email"/>
                             </div>
                           </div>
                           <div className="form-group">
-                            <label for="inputName" className="col-sm-2 control-label">Name</label>
+                            <label htmlFor="inputName" className="col-sm-2 control-label">Name</label>
 
                             <div className="col-sm-10">
                               <input type="text" className="form-control" id="inputName" placeholder="Name"/>
                             </div>
                           </div>
                           <div className="form-group">
-                            <label for="inputExperience" className="col-sm-2 control-label">Experience</label>
+                            <label htmlFor="inputExperience" className="col-sm-2 control-label">Experience</label>
 
                             <div className="col-sm-10">
                               <textarea className="form-control" id="inputExperience" placeholder="Experience"></textarea>
                             </div>
                           </div>
                           <div className="form-group">
-                            <label for="inputSkills" className="col-sm-2 control-label">Skills</label>
+                            <label htmlFor="inputSkills" className="col-sm-2 control-label">Skills</label>
 
                             <div className="col-sm-10">
                               <input type="text" className="form-control" id="inputSkills" placeholder="Skills"/>
