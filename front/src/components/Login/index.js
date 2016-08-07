@@ -5,17 +5,24 @@ import 'bootstrap/dist/js/bootstrap.js';
 import '../../theme/css/AdminLTE.css';
 import '../../theme/css/skins/_all-skins.css';
 import store from '../../store';
+import {connect} from 'react-redux';
 import * as userActions from '../../actions/user';
-import { browserHistory } from 'react-router'
 
 
+const defaultState = {
+    Email: "",
+    Pswd: ""
+};
 class Login extends Component {
     constructor(props) {
         super(props);
-        this.login = function(){
-            //userActions.LoadUser();
-            browserHistory.push('/');
-        };
+        this.state = defaultState;
+    }
+
+    onSubmit(e) {
+        e.preventDefault();
+        this.setState(defaultState);
+        store.dispatch(userActions.LoadUser(this.state));
     }
 
     render() {
@@ -30,18 +37,18 @@ class Login extends Component {
                     <div className="login-box-body">
                         <p className="login-box-msg">Sign in to start your session</p>
 
-                        <form>
+                        <form onSubmit={this.onSubmit.bind(this)}>
                             <div className="form-group has-feedback">
-                                <input type="email" className="form-control" placeholder="Email"/>
+                                <input type="email" className="form-control" placeholder="Email" value={this.state.Email} onChange={(e) => this.setState({Email: e.target.value})}/>
                                 <span className="glyphicon glyphicon-envelope form-control-feedback"></span>
                             </div>
                             <div className="form-group has-feedback">
-                                <input type="password" className="form-control" placeholder="Password"/>
+                                <input type="password" className="form-control" placeholder="Password" value={this.state.Pswd} onChange={(e) => this.setState({Pswd: e.target.value})}/>
                                 <span className="glyphicon glyphicon-lock form-control-feedback"></span>
                             </div>
                             <div className="row">
                                 <div className="col-xs-offset-8 col-xs-4">
-                                    <a  className="btn btn-primary btn-block btn-flat"  onClick={this.login}>Sign In</a>
+                                    <button type="submit" className="btn btn-primary btn-block btn-flat">Sign In</button>
                                 </div>
 
                             </div>

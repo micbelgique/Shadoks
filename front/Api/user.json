@@ -1,6 +1,7 @@
 {
         "Id": "3",
         "Avatar": "../src/dist/img/matw_avatar_160px.png",
+        "Email":"mathieu.wautier@yopmail.com",
         "Login": "mathieu",
         "Nom": "Wautier",
         "Prenom": "Mathieu",

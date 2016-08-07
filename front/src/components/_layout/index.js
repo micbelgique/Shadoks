@@ -168,47 +168,25 @@ class NavBar extends Component {
 
                     <ul className="sidebar-menu">
                         <li className="active treeview">
-                            <a href="#">
-                                <i className="fa fa-dashboard"></i>
-                                <span>Dashboard</span>
-                                <span className="pull-right-container">
-                                    <i className="fa fa-angle-left pull-right"></i>
-                                </span>
+                            <a href="/Rooms">
+                                <i className="fa fa-building-o"></i>
+                                <span>CoWorking</span>
                             </a>
                             <ul className="treeview-menu">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="/Rooms/1">
                                         <i className="fa fa-circle-o"></i>
-                                        Dashboard v1</a>
+                                        Room 1</a>
                                 </li>
-                                <li className="active">
-                                    <a href="index2.html">
+                                <li >
+                                    <a href="/Rooms/2">
                                         <i className="fa fa-circle-o"></i>
-                                        Dashboard v2</a>
+                                      Room 2</a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li className="treeview">
-                            <ul className="treeview-menu">
-                                <li>
-                                    <a href="pages/layout/top-nav.html">
+                                <li >
+                                    <a href="/Rooms/3">
                                         <i className="fa fa-circle-o"></i>
-                                        Top Navigation</a>
-                                </li>
-                                <li>
-                                    <a href="pages/layout/boxed.html">
-                                        <i className="fa fa-circle-o"></i>
-                                        Boxed</a>
-                                </li>
-                                <li>
-                                    <a href="pages/layout/fixed.html">
-                                        <i className="fa fa-circle-o"></i>
-                                        Fixed</a>
-                                </li>
-                                <li>
-                                    <a href="pages/layout/collapsed-sidebar.html">
-                                        <i className="fa fa-circle-o"></i>
-                                        Collapsed Sidebar</a>
+                                      Room 3</a>
                                 </li>
                             </ul>
                         </li>

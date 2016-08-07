@@ -1,6 +1,7 @@
 export const REQUEST_USER = 'REQUEST_USER';
 export const RECEIVE_USER = 'RECEIVE_USER';
 
+import {browserHistory} from 'react-router'
 import config from '../config';
 
 function RequestUser(){
@@ -10,6 +11,7 @@ function RequestUser(){
 }
 
 function ReceiveUser(user){
+    browserHistory.push('/');
     return {
         type: RECEIVE_USER,
         user

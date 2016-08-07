@@ -16,7 +16,6 @@ const userReducer = (state = defaultState, action) => {
             break;
         case actions.RECEIVE_USER:
             const { user } = action;
-            debugger;
             return {
                 ...state,
                 user
