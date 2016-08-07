@@ -1,0 +1,52 @@
+[{
+    "Id": "1",
+    "Nom": "Co-nnexion - Coworking Mons",
+    "Users": []
+}, {
+    "Id": "2",
+    "Nom": "Transforma BXL",
+    "Users": []
+}, {
+    "Id": "3",
+    "Nom": "Betacowork Coworking Brussels",
+    "Users": []
+}, {
+    "Id": "4",
+    "Nom": "MIC Summer Camp",
+    "Users": [{
+        "Id": "3",
+        "Login": "Mathieu",
+        "Nom": "Wautier",
+        "Prenom": "Mathieu",
+        "Description": "",
+        "Avatar": ""
+    }, {
+        "Id": "4",
+        "Login": "Mathis",
+        "Nom": "Andre",
+        "Prenom": "Mathis",
+        "Description": "",
+        "Avatar": ""
+    }, {
+        "Id": "5",
+        "Login": "JP",
+        "Nom": "deblaton",
+        "Prenom": "JP",
+        "Description": "",
+        "Avatar": ""
+    }, {
+        "Id": "6",
+        "Login": "Vincent",
+        "Nom": "Margant",
+        "Prenom": "Vincent",
+        "Description": "",
+        "Avatar": ""
+    }, {
+        "Id": "7",
+        "Login": "Fred",
+        "Nom": "C",
+        "Prenom": "Fred",
+        "Description": "",
+        "Avatar": ""
+    }]
+}]

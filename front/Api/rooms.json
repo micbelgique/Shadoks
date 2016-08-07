@@ -1,6 +1,7 @@
 [{
     "Id": 1,
     "Name": "Room 1",
+    "CoWorkingName":"Co-nnexion - Coworking Mons",
     "Users": [{
         "Id": "3",
         "Avatar": "../src/dist/img/matw_avatar_160px.png",
@@ -16,9 +17,11 @@
         "Prenom": "JP",
         "Description": ""
     }]
-}, {
+},
+{
     "Id": 2,
     "Name": "Room 2",
+    "CoWorkingName":"Co-nnexion - Coworking Mons",
     "Users": [{
         "Id": "4",
         "Avatar": "../src/dist/img/matw_avatar_160px.png",
@@ -34,8 +37,56 @@
         "Prenom": "Vincent",
         "Description": ""
     }]
-}, {
+},
+{
     "Id": 3,
+    "CoWorkingName":"Co-nnexion - Coworking Mons",
+    "Name": "Room 3",
+    "Users": []
+},
+{
+    "Id": 4,
+    "Name": "Room 1",
+    "CoWorkingName":"Transforma BXL",
+    "Users": [{
+        "Id": "3",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
+        "Login": "mathieu",
+        "Nom": "Wautier",
+        "Prenom": "Mathieu",
+        "Description": ""
+    }, {
+        "Id": "5",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
+        "Login": "jp",
+        "Nom": "deblaton",
+        "Prenom": "JP",
+        "Description": ""
+    }]
+},
+{
+    "Id": 5,
+    "Name": "Room 2",
+    "CoWorkingName":"Transforma BXL",
+    "Users": [{
+        "Id": "4",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
+        "Login": "mathis",
+        "Nom": "Andre",
+        "Prenom": "Mathis",
+        "Description": ""
+    }, {
+        "Id": "6",
+        "Avatar": "../src/dist/img/matw_avatar_160px.png",
+        "Login": "vincent",
+        "Nom": "Margant",
+        "Prenom": "Vincent",
+        "Description": ""
+    }]
+},
+{
+    "Id": 6,
+    "CoWorkingName":"Transforma BXL",
     "Name": "Room 3",
     "Users": []
 }]
