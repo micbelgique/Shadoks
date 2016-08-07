@@ -149,7 +149,7 @@ class NavBar extends Component {
 
                     <ul className="sidebar-menu">
                         <li className="active treeview">
-                            <a href="/Rooms">
+                            <a onClick={() => browserHistory.push('/Rooms')}>
                                 <i className="fa fa-building-o"></i>
                                 <span>CoWorking</span>
                             </a>
