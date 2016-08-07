@@ -1,3 +1,3 @@
 export default {
-  baseUrl: 'http://localhost'
+  baseUrl: 'http://www.godofweb.eu/dev/back'
 };
