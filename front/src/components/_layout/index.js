@@ -116,20 +116,18 @@ class AppHeader extends Component {
                                         <img src="../src/dist/img/matw_avatar.png" className="img-circle" alt="User Image"/>
 
                                         <p>
-                                            Mathieu Wautier - Web Developer
+                                            Mathieu Wautier
+                                            <small>Web Developer</small>
                                         </p>
                                     </li>
                                     <li className="user-body">
                                         <div className="row">
-                                            <div className="col-xs-4 text-center">
-                                                <a href="#">Followers</a>
-                                            </div>
-                                            <div className="col-xs-4 text-center">
-                                                <a href="#">Sales</a>
-                                            </div>
-                                            <div className="col-xs-4 text-center">
+                                            <div className="col-xs-6 text-center">
                                                 <a href="#">Friends</a>
                                             </div>
+                                            <div className="col-xs-6 text-center">
+                                                <a href="#">Followers</a>
+                                            </div>                                            
                                         </div>
                                     </li>
                                     <li className="user-footer">
@@ -204,7 +202,7 @@ class NavBar extends Component {
                                 <i className="fa fa-envelope"></i>
                                 <span>Mailbox</span>
                                 <span className="pull-right-container">
-                                    <small className="label pull-right bg-yellow">12</small>
+                                    <small className="label pull-right bg-yellow">1</small>
                                 </span>
                             </a>
                         </li>

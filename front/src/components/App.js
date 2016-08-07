@@ -200,7 +200,7 @@ class App extends Component {
                                     <i className="fa fa-envelope"></i>
                                     <span>Mailbox</span>
                                     <span className="pull-right-container">
-                                        <small className="label pull-right bg-yellow">12</small>
+                                        <small className="label pull-right bg-yellow">1</small>
                                     </span>
                                 </a>
                             </li>
